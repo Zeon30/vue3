@@ -1,0 +1,19 @@
+{
+  "name": "vue3-todo-app",
+  "version": "1.0.0",
+  "description": "Vue3 待办事项应用 - 学习项目",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "vue-router": "^4.2.0",
+    "pinia": "^2.1.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "@vitejs/plugin-vue": "^5.0.0"
+  }
+}

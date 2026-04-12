@@ -1,0 +1,126 @@
+/* style.css - 全局样式文件 */
+/* 这里的样式会应用到整个应用 */
+
+/* ============================================ */
+/* CSS 重置和基础样式 */
+/* ============================================ */
+
+/* 通配符选择器，选中所有元素 */
+* {
+  /* 使用 border-box 盒模型 */
+  /* 这样 padding 和 border 不会增加元素的总宽度 */
+  box-sizing: border-box;
+
+  /* 移除默认的外边距和内边距 */
+  margin: 0;
+  padding: 0;
+}
+
+/* body 样式 */
+body {
+  /* 字体族：优先使用系统字体 */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* 字体大小 */
+  font-size: 16px;
+
+  /* 行高 */
+  line-height: 1.6;
+
+  /* 文字颜色 */
+  color: #333;
+
+  /* 背景色 */
+  background-color: #f9f9f9;
+}
+
+/* 链接样式 */
+a {
+  /* 移除下划线 */
+  text-decoration: none;
+
+  /* 链接颜色 */
+  color: #42b883;  /* Vue 的绿色 */
+}
+
+/* 链接悬停样式 */
+a:hover {
+  /* 悬停时显示下划线 */
+  text-decoration: underline;
+}
+
+/* 按钮基础样式 */
+button {
+  /* 鼠标样式 */
+  cursor: pointer;
+
+  /* 移除默认边框 */
+  border: none;
+
+  /* 圆角 */
+  border-radius: 4px;
+
+  /* 内边距 */
+  padding: 8px 16px;
+
+  /* 字体大小 */
+  font-size: 14px;
+
+  /* 过渡动画 */
+  transition: all 0.3s ease;
+}
+
+/* 输入框基础样式 */
+input {
+  /* 内边距 */
+  padding: 8px 12px;
+
+  /* 边框 */
+  border: 1px solid #ddd;
+
+  /* 圆角 */
+  border-radius: 4px;
+
+  /* 字体大小 */
+  font-size: 14px;
+
+  /* 过渡动画 */
+  transition: border-color 0.3s ease;
+}
+
+/* 输入框聚焦样式 */
+input:focus {
+  /* 聚焦时的边框颜色 */
+  border-color: #42b883;
+
+  /* 移除默认的聚焦轮廓 */
+  outline: none;
+}
+
+/* 列表样式重置 */
+ul {
+  /* 移除默认的列表样式 */
+  list-style: none;
+}
+
+/* ============================================ */
+/* 工具类 */
+/* ============================================ */
+
+/* 文字居中 */
+.text-center {
+  text-align: center;
+}
+
+/* 弹性布局居中 */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 间距工具类 */
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }

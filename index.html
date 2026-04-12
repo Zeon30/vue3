@@ -1,0 +1,20 @@
+<!-- index.html - 项目的入口 HTML 文件 -->
+<!-- Vite 会以这个文件作为入口，自动注入打包后的 JS 和 CSS -->
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue3 待办事项应用</title>
+</head>
+<body>
+  <!-- Vue 应用会挂载到这个 div 上 -->
+  <!-- id="app" 必须和 main.js 中的挂载点一致 -->
+  <div id="app"></div>
+
+  <!-- 引入主入口 JS 文件 -->
+  <!-- type="module" 表示使用 ES6 模块语法 -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
